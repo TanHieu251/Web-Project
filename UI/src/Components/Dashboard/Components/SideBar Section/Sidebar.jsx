@@ -3,6 +3,7 @@ import './Sidebar.css'
 
 //Imported Images=======>
 import logo from '../../Assets/logo.png'
+import { Link } from 'react-router-dom'
 
 //import icons========>
 import { IoMdSpeedometer } from "react-icons/io";
@@ -101,11 +102,13 @@ const Sidebar = () => {
                         </a>
                     </li>
 
-                    <li className="listItem">
-                        <button className="logOut">
-                            <BsFillArrowLeftCircleFill className="icon" />
-                            <span>Log Out</span>
-                        </button>
+                    <li className="listItem" >
+                        <Link to={'/'}>
+                            <button className="logOut">
+                                <BsFillArrowLeftCircleFill className="icon" />
+                                <span>Log Out</span>
+                            </button>
+                        </Link>
 
                     </li>
                 </ul>
